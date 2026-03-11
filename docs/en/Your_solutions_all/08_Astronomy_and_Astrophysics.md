@@ -1,76 +1,429 @@
 # Section 8: Astronomy and Astrophysics
 
-Your soultions go here!!!!
+Your solutions go here.
 
 ---
 
-Below it is just a copy of the tasks, so you can easily navigate to the task you want to solve. You can also use the links in the sidebar to navigate to the tasks.
-
 ## 1. Rotational Velocity
 
-Calculate the linear speed (in km/s) of a point on the Earth's equator due to its rotation. Earth's radius $\approx 6378$ km.
+Earth radius:
 
-## 2. Orbital Mechanics
+$$
+R_E = 6378 \text{ km}
+$$
 
-Calculate the orbital speed of the International Space Station (ISS), which orbits at an altitude of approximately 400 km above the Earth's surface. (Earth's mass $M_E \approx 5.97 \times 10^{24}$ kg). Compare this speed of Earth's orbital speed around the Sun (Earth-Sun distance $\approx 150 \times 10^6$ km, Earth's orbital period $\approx 365.25$ days). Which is faster, the ISS around the Earth or Earth in its orbit around the Sun?
+Earth rotation period:
 
-## 3. Microgravity
+$$
+T = 24 \text{ h} = 86400 \text{ s}
+$$
 
-What is the acceleration due to gravity ($g$) at the altitude of the ISS (400 km)? Why do astronauts experience a state of "weightlessness" despite this gravity?
+Linear speed:
 
-## 4. Geostationary Orbit
+$$
+v = \frac{2\pi R_E}{T}
+$$
 
-Satellites in geostationary orbit remain above the same point on Earth. What must their orbital period be? Calculate the altitude of a geostationary orbit above the Earth's surface.
+$$
+v = \frac{2\pi \times 6378}{86400}
+$$
 
-## 5. Escape Velocity
+$$
+v \approx 0.465 \text{ km/s}
+$$
 
-What is the escape velocity from the surface of the Moon? (Moon's mass $M_M \approx 7.35 \times 10^{22}$ kg; whereas Moon's radius $R_M \approx 1,737$ km). Express the result in km/s and as a fraction of Earth's escape velocity (Earth's escape velocity $\approx 11.2$ km/s).
+---
 
-## 6. Solar Gravity
+# 2. Orbital Mechanics
 
-Calculate the acceleration due to gravity on the surface of the Sun. By what factor would your weight increase if you could stand on its surface? (Sun's mass $M_S \approx 2 \times 10^{30}$ kg; Sun's radius $R_S \approx 6.96 \times 10^8$ m).
+ISS altitude:
 
-## 7. Megastructures
+$$
+h = 400 \text{ km}
+$$
 
-A "Dyson Sphere" is a hypothetical megastructure that completely encompasses a star to capture its energy output. If the mass of Mercury ($3.3 \times 10^{23}$ kg) were used to build a solar panel sphere with a surface density of 10 kg/m², what would be the radius of the sphere?
+Orbital radius:
 
-## 8. Interplanetary Travel
+$$
+r = R_E + h = 6378 + 400 = 6778 \text{ km}
+$$
 
-How much time would it take to get from Earth to Mars when Mars is at its closest approach (55 million km)
+Orbital velocity formula:
 
-a) for a message sent at the speed of light?
+$$
+v = \sqrt{\frac{GM_E}{r}}
+$$
 
-b) by a spacecraft traveling at a constant speed of 40,000 km/h = 11.11 km/s?
+Where:
 
-c) by "airplane" traveling at a constant speed of 900 km/h, typical for intercontinental flights?
+$$
+G = 6.67 \times 10^{-11}
+$$
 
-## 9. Aristarchus’ Method 
+$$
+M_E = 5.97 \times 10^{24} \text{ kg}
+$$
 
-At the exact half-Moon phase (dichotomy), the Earth–Moon–Sun system forms a right triangle with the right angle at the Moon.
+Result:
 
-The angular separation between the Sun and the Moon observed from Earth at that moment is $\theta = 89.85^\circ$. The apparent angular diameter of both the Sun and the Moon is $\alpha = 0.53^\circ$. The average Earth–Moon distance is $d_{EM} = 3.84 \times 10^5 \,\text{km}$. 
+$$
+v_{ISS} \approx 7.67 \text{ km/s}
+$$
 
-Calculate:
+Earth orbital speed around Sun:
 
-1. The Earth–Sun distance $d_{ES}$ in km.
+$$
+v = \frac{2\pi r}{T}
+$$
 
-2. The true diameter of the Sun $D_S$ in km (use the small-angle approximation $\alpha \approx D/d$, with $\alpha$ in radians).
+$$
+r = 150 \times 10^6 \text{ km}
+$$
 
-3. The ratio of true diameters $\frac{D_M}{D_S}$.
+$$
+T = 365.25 \text{ days}
+$$
 
-4. How much the value of $d_{ES}$ changes if $\theta = 89.75^\circ$ (used by Aristarchus) is used instead of $89.85^\circ$. Briefly comment on the sensitivity of the result to the angle measurement and what this implies for Aristarchus’ method.
+Result:
 
-## 10. Measuring the Height of the Atmosphere
+$$
+v_{Earth} \approx 29.8 \text{ km/s}
+$$
 
-Medieval astronomers in Al-Andalus timed how long it takes after **sunset** until **astronomical twilight** begins (when faint stars become visible). They assumed this happens when the Sun is at a true geometric angle $\delta$ below the horizon. A chronicle reports that on a clear evening the time between sunset and the first appearance of faint stars was $t = 37\,\text{min}$.
+Conclusion:
 
-Assume:
-- Earth radius $R_E = 6370\,\text{km}$,
-- Earth’s rotation rate $360^\circ$ per 24 hours,
-- A simple “sharp-edge atmosphere” model in which a Sun ray reaches the observer by just grazing the top of the atmosphere, giving
+$$
+v_{Earth} > v_{ISS}
+$$
 
-$$\cos\delta = \frac{R_E}{R_E+h}.$$
+Earth moves faster around the Sun than the ISS around Earth.
 
-Find the solar depression angle $\delta$ (in degrees) from the measured time $t$ and the atmospheric height $h$ in km.
+---
 
+# 3. Microgravity
 
+Gravity formula:
+
+$$
+g = \frac{GM_E}{r^2}
+$$
+
+Distance from Earth center:
+
+$$
+r = 6778 \text{ km} = 6.778 \times 10^6 \text{ m}
+$$
+
+Result:
+
+$$
+g \approx 8.7 \text{ m/s}^2
+$$
+
+Astronauts feel weightless because they are in **continuous free fall around Earth**, not because gravity is zero.
+
+---
+
+# 4. Geostationary Orbit
+
+Orbital period must equal Earth's rotation:
+
+$$
+T = 24 \text{ hours}
+$$
+
+Orbital radius:
+
+$$
+r = \left(\frac{GM_E T^2}{4\pi^2}\right)^{1/3}
+$$
+
+Result:
+
+$$
+r \approx 42164 \text{ km}
+$$
+
+Altitude above Earth's surface:
+
+$$
+h = r - R_E
+$$
+
+$$
+h = 42164 - 6378
+$$
+
+$$
+h \approx 35786 \text{ km}
+$$
+
+---
+
+# 5. Escape Velocity (Moon)
+
+Escape velocity formula:
+
+$$
+v_e = \sqrt{\frac{2GM}{R}}
+$$
+
+Moon parameters:
+
+$$
+M_M = 7.35 \times 10^{22} \text{ kg}
+$$
+
+$$
+R_M = 1737 \text{ km}
+$$
+
+Result:
+
+$$
+v_e \approx 2.38 \text{ km/s}
+$$
+
+Fraction of Earth's escape velocity:
+
+$$
+\frac{2.38}{11.2} \approx 0.21
+$$
+
+So the Moon's escape velocity is about **21% of Earth's**.
+
+---
+
+# 6. Solar Gravity
+
+Gravity formula:
+
+$$
+g = \frac{GM_S}{R_S^2}
+$$
+
+Parameters:
+
+$$
+M_S = 2 \times 10^{30} \text{ kg}
+$$
+
+$$
+R_S = 6.96 \times 10^8 \text{ m}
+$$
+
+Result:
+
+$$
+g \approx 274 \text{ m/s}^2
+$$
+
+Weight increase factor:
+
+$$
+\frac{274}{9.81} \approx 28
+$$
+
+You would weigh about **28 times more** on the Sun.
+
+---
+
+# 7. Dyson Sphere
+
+Mercury mass:
+
+$$
+M = 3.3 \times 10^{23} \text{ kg}
+$$
+
+Surface density:
+
+$$
+\sigma = 10 \text{ kg/m}^2
+$$
+
+Sphere area:
+
+$$
+A = \frac{M}{\sigma}
+$$
+
+$$
+A = 3.3 \times 10^{22} \text{ m}^2
+$$
+
+Sphere radius:
+
+$$
+A = 4\pi r^2
+$$
+
+$$
+r = \sqrt{\frac{A}{4\pi}}
+$$
+
+Result:
+
+$$
+r \approx 5.1 \times 10^{10} \text{ m}
+$$
+
+$$
+r \approx 51 \text{ million km}
+$$
+
+---
+
+# 8. Interplanetary Travel
+
+Distance:
+
+$$
+d = 55 \times 10^6 \text{ km}
+$$
+
+### a) Speed of light
+
+$$
+c = 300000 \text{ km/s}
+$$
+
+$$
+t = \frac{d}{c}
+$$
+
+$$
+t \approx 183 \text{ s}
+$$
+
+$$
+t \approx 3.05 \text{ minutes}
+$$
+
+---
+
+### b) Spacecraft
+
+$$
+v = 11.11 \text{ km/s}
+$$
+
+$$
+t = \frac{55 \times 10^6}{11.11}
+$$
+
+$$
+t \approx 4.95 \times 10^6 \text{ s}
+$$
+
+$$
+t \approx 57 \text{ days}
+$$
+
+---
+
+### c) Airplane
+
+$$
+v = 900 \text{ km/h}
+$$
+
+$$
+t = \frac{55 \times 10^6}{900}
+$$
+
+$$
+t \approx 61111 \text{ h}
+$$
+
+$$
+t \approx 7 \text{ years}
+$$
+
+---
+
+# 9. Aristarchus’ Method
+
+Angle:
+
+$$
+\theta = 89.85^\circ
+$$
+
+Earth–Moon distance:
+
+$$
+d_{EM} = 3.84 \times 10^5 \text{ km}
+$$
+
+Earth–Sun distance:
+
+$$
+d_{ES} = \frac{d_{EM}}{\cos\theta}
+$$
+
+Result:
+
+$$
+d_{ES} \approx 1.47 \times 10^8 \text{ km}
+$$
+
+Sun diameter using small-angle approximation:
+
+Convert to radians:
+
+$$
+\alpha = 0.53^\circ = 0.00925 \text{ rad}
+$$
+
+$$
+D_S = \alpha d_{ES}
+$$
+
+$$
+D_S \approx 1.36 \times 10^6 \text{ km}
+$$
+
+---
+
+# 10. Height of the Atmosphere
+
+Time:
+
+$$
+t = 37 \text{ min}
+$$
+
+Earth rotation:
+
+$$
+360^\circ \text{ in } 24 \text{ h}
+$$
+
+Solar depression angle:
+
+$$
+\delta = \frac{37}{1440} \times 360
+$$
+
+$$
+\delta \approx 9.25^\circ
+$$
+
+Atmosphere model:
+
+$$
+\cos\delta = \frac{R_E}{R_E + h}
+$$
+
+Solve for height:
+
+$$
+h = \frac{R_E}{\cos\delta} - R_E
+$$
+
+Result:
+
+$$
+h \approx 80 \text{ km}
+$$
