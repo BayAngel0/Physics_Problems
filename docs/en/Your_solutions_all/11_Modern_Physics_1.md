@@ -1,47 +1,389 @@
 # Section 11: Modern Physics I
 
-Your soultions go here!!!!
+Your solutions go here.
 
 ---
 
-Below it is just a copy of the tasks, so you can easily navigate to the task you want to solve. You can also use the links in the sidebar to navigate to the tasks.
-
 ## 1. De Broglie Wavelength
 
-Calculate the de Broglie wavelength of an electron with a kinetic energy of 150 eV.
+De Broglie relation:
 
-## 2. Macroscopic Limits
+$$
+\lambda = \frac{h}{p}
+$$
 
-Calculate the de Broglie wavelength of a 50-gram golf ball traveling at a speed of 60 m/s. Why are quantum effects not noticeable for macroscopic objects?
+For electrons with kinetic energy:
 
-## 3. Photon vs Electron
+$$
+\lambda = \frac{h}{\sqrt{2mE}}
+$$
 
-What happens to the energy of a photon if its wavelength is doubled? What happens to the kinetic energy of an electron (non-relativistically) if its de Broglie wavelength is doubled?
+Constants:
 
-## 4. X-Ray Production
+$$
+h = 6.626\times10^{-34}\ \text{J·s}
+$$
 
-What is the minimum potential difference that must be applied across an X-ray tube to produce X-rays with a wavelength of $0.01$ nm? (Hint: $E = hf = hc/\lambda = qV$).
+$$
+m_e = 9.11\times10^{-31}\ \text{kg}
+$$
 
-## 5. Heisenberg Principle
+Energy:
 
-Using the Heisenberg Uncertainty Principle ($\Delta x \Delta p \ge \hbar/2$), what is the minimum uncertainty in the velocity of an electron that is confined within a region of space 0.1 nm wide (which is approximately the size of an atom)?
+$$
+E = 150\ \text{eV} = 2.4\times10^{-17}\ \text{J}
+$$
 
-## 6. Emission Spectra
+Result:
 
-Calculate the energy of the photon emitted by a hydrogen atom when an electron transitions from the n=4 state to the n=2 state. What is the wavelength of this photon? What is the color of this light in the visible spectrum? (Hint: Use the Rydberg formula for hydrogen levels: $E_n = -13.6 \text{ eV}/n^2$).
+$$
+\lambda \approx 1.0\times10^{-10}\ \text{m}
+$$
 
-## 7. Bohr Model
+$$
+\lambda \approx 0.10\ \text{nm}
+$$
 
-Calculate the radius of the second orbit (n=2) in a hydrogen atom using the Bohr model.
+---
 
-## 8. Angular Momentum
+# 2. Macroscopic Limits
 
-What is the angular momentum of an electron in the n=4 state of a hydrogen atom, according to the Bohr model?
+Mass:
 
-## 9. Threshold Frequency
+$$
+m = 50\ \text{g} = 0.05\ \text{kg}
+$$
 
-For light, at what frequency will the photoelectric effect begin for a metal with a work function of 4.5 eV?
+Speed:
 
-## 10. Photoelectric Effect
+$$
+v = 60\ \text{m/s}
+$$
 
-The work function of potassium is 2.3 eV. What is the maximum kinetic energy of electrons ejected from potassium when it is illuminated with ultraviolet light of wavelength 350 nm?
+Momentum:
+
+$$
+p = mv
+$$
+
+$$
+p = 0.05\times60 = 3
+$$
+
+De Broglie wavelength:
+
+$$
+\lambda = \frac{h}{p}
+$$
+
+$$
+\lambda = \frac{6.626\times10^{-34}}{3}
+$$
+
+$$
+\lambda \approx 2.2\times10^{-34}\ \text{m}
+$$
+
+Quantum effects are unobservable because this wavelength is **far smaller than atomic scales**.
+
+---
+
+# 3. Photon vs Electron
+
+Photon energy:
+
+$$
+E = \frac{hc}{\lambda}
+$$
+
+If wavelength doubles:
+
+$$
+\lambda \rightarrow 2\lambda
+$$
+
+$$
+E \rightarrow \frac{E}{2}
+$$
+
+Photon energy **halves**.
+
+---
+
+Electron kinetic energy:
+
+From de Broglie:
+
+$$
+\lambda = \frac{h}{p}
+$$
+
+Momentum:
+
+$$
+p = \frac{h}{\lambda}
+$$
+
+Kinetic energy:
+
+$$
+E = \frac{p^2}{2m}
+$$
+
+Thus:
+
+$$
+E \propto \frac{1}{\lambda^2}
+$$
+
+If wavelength doubles:
+
+$$
+E \rightarrow \frac{E}{4}
+$$
+
+Electron kinetic energy becomes **one quarter**.
+
+---
+
+# 4. X-Ray Production
+
+Photon energy:
+
+$$
+E = \frac{hc}{\lambda}
+$$
+
+Wavelength:
+
+$$
+\lambda = 0.01\ \text{nm} = 10^{-11}\ \text{m}
+$$
+
+Constants:
+
+$$
+h = 6.626\times10^{-34}
+$$
+
+$$
+c = 3\times10^8
+$$
+
+Energy:
+
+$$
+E = 1.99\times10^{-14}\ \text{J}
+$$
+
+Convert to electron volts:
+
+$$
+E \approx 1.24\times10^5\ \text{eV}
+$$
+
+Minimum voltage:
+
+$$
+V = 124\ \text{kV}
+$$
+
+---
+
+# 5. Heisenberg Principle
+
+Uncertainty relation:
+
+$$
+\Delta x \Delta p \ge \frac{\hbar}{2}
+$$
+
+Position uncertainty:
+
+$$
+\Delta x = 0.1\ \text{nm} = 1\times10^{-10}\ \text{m}
+$$
+
+Reduced Planck constant:
+
+$$
+\hbar = 1.055\times10^{-34}
+$$
+
+Momentum uncertainty:
+
+$$
+\Delta p \ge \frac{\hbar}{2\Delta x}
+$$
+
+$$
+\Delta p \approx 5.3\times10^{-25}\ \text{kg·m/s}
+$$
+
+Velocity uncertainty:
+
+$$
+\Delta v = \frac{\Delta p}{m_e}
+$$
+
+$$
+\Delta v \approx 5.8\times10^{5}\ \text{m/s}
+$$
+
+---
+
+# 6. Emission Spectra
+
+Hydrogen energy levels:
+
+$$
+E_n = -\frac{13.6}{n^2}\ \text{eV}
+$$
+
+Initial state:
+
+$$
+E_4 = -0.85\ \text{eV}
+$$
+
+Final state:
+
+$$
+E_2 = -3.4\ \text{eV}
+$$
+
+Energy of photon:
+
+$$
+E = 2.55\ \text{eV}
+$$
+
+Wavelength:
+
+$$
+\lambda = \frac{1240}{E}
+$$
+
+$$
+\lambda \approx 486\ \text{nm}
+$$
+
+Color:
+
+$$
+\text{Blue-green (Balmer line)}
+$$
+
+---
+
+# 7. Bohr Model
+
+Bohr radius:
+
+$$
+a_0 = 0.529\ \text{Å}
+$$
+
+Orbit radius:
+
+$$
+r_n = n^2 a_0
+$$
+
+For n = 2:
+
+$$
+r_2 = 4a_0
+$$
+
+$$
+r_2 = 2.12\ \text{Å}
+$$
+
+$$
+r_2 = 0.212\ \text{nm}
+$$
+
+---
+
+# 8. Angular Momentum
+
+Bohr quantization:
+
+$$
+L = n\hbar
+$$
+
+For n = 4:
+
+$$
+L = 4\hbar
+$$
+
+$$
+L = 4.22\times10^{-34}\ \text{J·s}
+$$
+
+---
+
+# 9. Threshold Frequency
+
+Photoelectric relation:
+
+$$
+f_0 = \frac{\phi}{h}
+$$
+
+Work function:
+
+$$
+\phi = 4.5\ \text{eV}
+$$
+
+Convert to Joules:
+
+$$
+\phi = 7.2\times10^{-19}\ \text{J}
+$$
+
+Threshold frequency:
+
+$$
+f_0 \approx 1.09\times10^{15}\ \text{Hz}
+$$
+
+---
+
+# 10. Photoelectric Effect
+
+Photon energy:
+
+$$
+E = \frac{1240}{\lambda}
+$$
+
+Wavelength:
+
+$$
+\lambda = 350\ \text{nm}
+$$
+
+$$
+E \approx 3.54\ \text{eV}
+$$
+
+Work function:
+
+$$
+\phi = 2.3\ \text{eV}
+$$
+
+Maximum kinetic energy:
+
+$$
+K_{max} = E - \phi
+$$
+
+$$
+K_{max} = 1.24\ \text{eV}
+$$
