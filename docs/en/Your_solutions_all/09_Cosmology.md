@@ -1,55 +1,535 @@
 # Section 9: Cosmology
 
-Your soultions go here!!!!
+Your solutions go here.
 
 ---
 
-Below it is just a copy of the tasks, so you can easily navigate to the task you want to solve. You can also use the links in the sidebar to navigate to the tasks.
-
 ## 1. Cosmic Chronology
 
-**Place the following events of the early universe in chronological order** (from earliest to latest): Recombination (formation of neutral atoms), Big Bang Nucleosynthesis, Inflation, Formation of first galaxies, Quark-gluon plasma era.
+Chronological order (earliest → latest):
 
-## 2. Cosmic Temperatures
+$$
+\text{Inflation}
+$$
 
-**Order temperatures of objects in the universe from hottest to coldest:** the core of the Sun, the surface of the Sun, the present Cosmic Microwave Background (CMB) radiation, interstellar space, temperature of the Univeres at the nucleosynthesis era, human body temperature, temperature of the Universe at the recombination era, temperature of black hole with 10 solar masses, ionization temperature of hydrogen.
+$$
+\text{Quark–gluon plasma era}
+$$
 
-## 3. Cosmic Sizes
+$$
+\text{Big Bang nucleosynthesis}
+$$
 
-**Order the following objects in the universe from smallest to largest:** Earth, Milky Way galaxy, Solar System, observable universe, Sun, Andromeda galaxy, human, Moon, Pluto, Jupiter, Ceres, Local Group of galaxies
+$$
+\text{Recombination (formation of neutral atoms)}
+$$
 
-## 4. Hubble's Law
+$$
+\text{Formation of first galaxies}
+$$
 
-According to Hubble's Law $v = H_0 d$, and using the value of $H_0 \approx 70 \text{ (km/s)/Mpc}$, at what distance would a galaxy be receding from us at the speed of light? This defines the approximate size of the observable universe.
+---
 
-## 4. Galactic Year
+# 2. Cosmic Temperatures
 
-Our Solar System orbits the center of the Milky Way (a distance of about 27,000 light-years) at a speed of about 220 km/s. How long does it take to complete one orbit (a "galactic year")?
+Order from hottest to coldest:
 
-## 5. Galactic Collision
+$$
+\text{Universe during nucleosynthesis} \ (\sim10^9\,K)
+$$
 
-The Andromeda galaxy is about 2.5 million light-years away and is moving towards our Milky Way at about 110 km/s. Estimate how long it will be until the two galaxies collide.
+$$
+\text{Core of the Sun} \ (\sim1.5\times10^7\,K)
+$$
 
-## 6. Galactic Communication
+$$
+\text{Ionization temperature of hydrogen} \ (\sim10^4\,K)
+$$
 
-How much time would it take to exchange mutual greetings between two civilizations located at opposite ends of the Milky Way, assuming they can communicate at the speed of light?
+$$
+\text{Surface of the Sun} \ (\sim5800\,K)
+$$
 
-## 7. Galactic Trivia
+$$
+\text{Universe at recombination} \ (\sim3000\,K)
+$$
 
-a) What is the Milky Way galaxy's ratio of diameter to its thickness? 
+$$
+\text{Human body} \ (\sim310\,K)
+$$
 
-b) If 200 billion stars constituting the Milky Way were distributed equally among the present Earth's people, how many stars would each person get?
+$$
+\text{Interstellar space} \ (\sim10\,K)
+$$
 
-c) How much time would it take to count all the stars in the Milky Way if you counted one star per second without stopping?
+$$
+\text{Cosmic Microwave Background} \ (\sim2.7\,K)
+$$
 
-## 8. Cosmic Expansion
+$$
+\text{Black hole (10 solar masses)} \ (\sim10^{-8}\,K)
+$$
 
-If the universe is expanding at a rate of 70 km/s per megaparsec, how much will the distance between two galaxies that are currently 100 million light-years apart increase after 1 billion years? Assume that the expansion rate remains constant over this time period. (1 Mpc $\approx 3.26$ million light-years).
+---
 
-## 9. Doppler Effect
+# 3. Cosmic Sizes
 
-A galaxy is receding from Earth at a speed of $5 \times 10^6 \text{ m/s}$. It emits light with a wavelength of 486 nm (blue-green). What wavelength will be observed on Earth? Assume non-relativistic Doppler shift for light: $\lambda_{observed} = \lambda_{emitted} \left(1 + \frac{v}{c}\right)$, where $v$ is the recession speed and $c$ is the speed of light. Then use the relativistic Doppler shift formula to find the observed wavelength: $\lambda_{observed} = \lambda_{emitted} \sqrt{\frac{1 + \frac{v}{c}}{1 - \frac{v}{c}}}$, and compare the results.
+Smallest → largest:
 
-## 10. Cosmic Microwave Background
+$$
+\text{Human}
+$$
 
-The Cosmic Microwave Background (CMB) radiation now has a temperature of about 2.7 K. When it was emitted during the recombination era, it had a temperature of about 3000 K. What was the wavelength of the peak intensity of the CMB radiation at the time of recombination, and what is its wavelength now? Use Wien's displacement law: $\lambda_{peak} = \frac{b}{T}$, where $b \approx 2.898 \times 10^{-3} \text{ m K}$ is Wien's constant.
+$$
+\text{Ceres}
+$$
+
+$$
+\text{Moon}
+$$
+
+$$
+\text{Pluto}
+$$
+
+$$
+\text{Earth}
+$$
+
+$$
+\text{Jupiter}
+$$
+
+$$
+\text{Sun}
+$$
+
+$$
+\text{Solar System}
+$$
+
+$$
+\text{Milky Way galaxy}
+$$
+
+$$
+\text{Andromeda galaxy}
+$$
+
+$$
+\text{Local Group of galaxies}
+$$
+
+$$
+\text{Observable universe}
+$$
+
+---
+
+# 4. Hubble's Law
+
+Hubble law:
+
+$$
+v = H_0 d
+$$
+
+Speed of light:
+
+$$
+c = 300000 \ \text{km/s}
+$$
+
+Hubble constant:
+
+$$
+H_0 = 70 \ \text{km/s/Mpc}
+$$
+
+Distance:
+
+$$
+d = \frac{c}{H_0}
+$$
+
+$$
+d = \frac{300000}{70}
+$$
+
+$$
+d \approx 4286 \ \text{Mpc}
+$$
+
+Convert to light-years:
+
+$$
+1 \ \text{Mpc} \approx 3.26 \times 10^6 \ \text{ly}
+$$
+
+$$
+d \approx 1.4 \times 10^{10} \ \text{ly}
+$$
+
+Approximate observable universe scale.
+
+---
+
+# 4. Galactic Year
+
+Distance from galactic center:
+
+$$
+r = 27000 \ \text{ly}
+$$
+
+Convert to km:
+
+$$
+1 \ \text{ly} = 9.46 \times 10^{12} \ \text{km}
+$$
+
+$$
+r = 2.55 \times 10^{17} \ \text{km}
+$$
+
+Orbital speed:
+
+$$
+v = 220 \ \text{km/s}
+$$
+
+Orbit circumference:
+
+$$
+C = 2\pi r
+$$
+
+Time:
+
+$$
+T = \frac{C}{v}
+$$
+
+Result:
+
+$$
+T \approx 2.3 \times 10^8 \ \text{years}
+$$
+
+A galactic year is about **230 million years**.
+
+---
+
+# 5. Galactic Collision
+
+Distance:
+
+$$
+d = 2.5 \times 10^6 \ \text{ly}
+$$
+
+Convert to km:
+
+$$
+d \approx 2.37 \times 10^{19} \ \text{km}
+$$
+
+Speed:
+
+$$
+v = 110 \ \text{km/s}
+$$
+
+Time:
+
+$$
+t = \frac{d}{v}
+$$
+
+Result:
+
+$$
+t \approx 2.1 \times 10^{17} \ \text{s}
+$$
+
+Convert to years:
+
+$$
+t \approx 6.7 \times 10^9 \ \text{years}
+$$
+
+Approximate collision time: **about 7 billion years**.
+
+---
+
+# 6. Galactic Communication
+
+Milky Way diameter:
+
+$$
+D \approx 100000 \ \text{ly}
+$$
+
+Communication at speed of light:
+
+$$
+t = 100000 \ \text{years}
+$$
+
+For a reply:
+
+$$
+t_{round} = 200000 \ \text{years}
+$$
+
+---
+
+# 7. Galactic Trivia
+
+### a) Diameter / thickness
+
+Milky Way diameter:
+
+$$
+\approx 100000 \ \text{ly}
+$$
+
+Thickness:
+
+$$
+\approx 1000 \ \text{ly}
+$$
+
+Ratio:
+
+$$
+\frac{100000}{1000} = 100
+$$
+
+---
+
+### b) Stars per person
+
+Total stars:
+
+$$
+2 \times 10^{11}
+$$
+
+World population:
+
+$$
+8 \times 10^9
+$$
+
+Stars per person:
+
+$$
+\frac{2\times10^{11}}{8\times10^9}
+$$
+
+$$
+\approx 25
+$$
+
+Each person would receive about **25 stars**.
+
+---
+
+### c) Counting stars
+
+Counting rate:
+
+$$
+1 \ \text{star/s}
+$$
+
+Total stars:
+
+$$
+2 \times 10^{11}
+$$
+
+Time:
+
+$$
+t = 2 \times 10^{11} \ \text{s}
+$$
+
+Convert to years:
+
+$$
+t \approx 6300 \ \text{years}
+$$
+
+---
+
+# 8. Cosmic Expansion
+
+Distance:
+
+$$
+100 \ \text{million ly}
+$$
+
+Convert to Mpc:
+
+$$
+\frac{100}{3.26} \approx 30.7 \ \text{Mpc}
+$$
+
+Velocity:
+
+$$
+v = H_0 d
+$$
+
+$$
+v = 70 \times 30.7
+$$
+
+$$
+v \approx 2150 \ \text{km/s}
+$$
+
+Time:
+
+$$
+t = 1 \ \text{billion years}
+$$
+
+Convert to seconds:
+
+$$
+t = 3.15 \times 10^{16} \ \text{s}
+$$
+
+Distance increase:
+
+$$
+\Delta d = vt
+$$
+
+Result:
+
+$$
+\Delta d \approx 6.8 \times 10^{19} \ \text{km}
+$$
+
+Convert to light-years:
+
+$$
+\Delta d \approx 7.2 \ \text{million ly}
+$$
+
+---
+
+# 9. Doppler Effect
+
+Velocity:
+
+$$
+v = 5\times10^6 \ \text{m/s}
+$$
+
+Speed of light:
+
+$$
+c = 3\times10^8 \ \text{m/s}
+$$
+
+Emitted wavelength:
+
+$$
+\lambda_e = 486 \ \text{nm}
+$$
+
+### Non-relativistic
+
+$$
+\lambda_o = \lambda_e\left(1+\frac{v}{c}\right)
+$$
+
+$$
+\lambda_o = 486(1+0.0167)
+$$
+
+$$
+\lambda_o \approx 494 \ \text{nm}
+$$
+
+---
+
+### Relativistic
+
+$$
+\lambda_o =
+\lambda_e
+\sqrt{\frac{1+\frac{v}{c}}{1-\frac{v}{c}}}
+$$
+
+Result:
+
+$$
+\lambda_o \approx 494.1 \ \text{nm}
+$$
+
+Difference is very small because
+
+$$
+v \ll c
+$$
+
+---
+
+# 10. Cosmic Microwave Background
+
+Wien's law:
+
+$$
+\lambda_{peak} = \frac{b}{T}
+$$
+
+Constant:
+
+$$
+b = 2.898\times10^{-3} \ \text{mK}
+$$
+
+### Recombination era
+
+$$
+T = 3000K
+$$
+
+$$
+\lambda_{peak} = \frac{2.898\times10^{-3}}{3000}
+$$
+
+$$
+\lambda_{peak} \approx 9.66\times10^{-7} \ \text{m}
+$$
+
+$$
+\lambda \approx 0.97 \ \mu m
+$$
+
+(infrared)
+
+---
+
+### Today
+
+$$
+T = 2.7K
+$$
+
+$$
+\lambda_{peak} = \frac{2.898\times10^{-3}}{2.7}
+$$
+
+$$
+\lambda_{peak} \approx 1.07 \ \text{mm}
+$$
+
+(microwave region)
