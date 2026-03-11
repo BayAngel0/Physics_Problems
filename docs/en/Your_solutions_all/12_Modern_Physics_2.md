@@ -1,51 +1,339 @@
 # Section 12: Modern Physics II (Quantum Mechanics)
 
-Your soultions go here!!!!
+Your solutions go here.
 
 ---
 
-Below it is just a copy of the tasks, so you can easily navigate to the task you want to solve. You can also use the links in the sidebar to navigate to the tasks.
-
 ## 1. Quantum Numbers
 
-For the $n=3$ energy level in a hydrogen atom, what are the possible values for the quantum numbers $l$ (orbital) and $m_l$ (magnetic)? How many distinct electron states exist for $n=3$?
+For the principal quantum number:
 
-## 2. Energy Scaling
+$$
+n = 3
+$$
 
-State the general dependence of energy E on the principal quantum number n (i.e., establish power of n in the formula $E_n \propto n^?$) for:
+Possible orbital quantum numbers:
 
-a) A particle in a one-dimensional infinite potential well.
+$$
+l = 0,1,2
+$$
 
-b) An electron in a hydrogen atom.
+Magnetic quantum numbers:
 
-## 3. Photon Energy
+For
 
-Calculate the energy (in eV) of a photon with a wavelength of 500 nm. Use the formula $E = \frac{hc}{\lambda}$ where $h = 4.1357 \times 10^{-15}$ [eVs] and $c = 3.0 \times 10^8 \text{ m/s}$.
+$$
+l=0 \Rightarrow m_l = 0
+$$
 
-## 4. Radioactive Half-Life
+For
 
-The half-life of Cobalt-60 is 5.27 years. If a sample initially contains 100 grams of Cobalt-60, how much will remain after approximately 21 years?
+$$
+l=1 \Rightarrow m_l = -1,0,1
+$$
 
-## 5. Alpha Decay
+For
 
-Give a specific, balanced nuclear equation for an alpha decay process, starting with Uranium-238 (${}^{238}_{92}\text{U}$). 
+$$
+l=2 \Rightarrow m_l = -2,-1,0,1,2
+$$
 
-## 6. Beta Decay
+Total states:
 
-Give a specific, balanced nuclear equation for a beta-minus decay process, starting with Carbon-14 (${}^{14}_{6}\text{C}$). 
+$$
+1 + 3 + 5 = 9
+$$
 
-## 7. Pair Annihilation
+Thus:
 
-An electron and a positron, each with a rest mass of $0.511 \text{MeV/c}^2$, annihilate each other, producing two photons of equal energy. What is the energy (in MeV) and wavelength of each photon?
+$$
+9 \text{ spatial states}
+$$
 
-## 8. Quark Model
+Including spin:
 
-What is the quark composition of a proton and a neutron? Use this to verify their electric charges (u quark charge = +2/3 e, d quark charge = -1/3 e).
+$$
+2n^2 = 18 \text{ electron states}
+$$
 
-## 9. Quantum Well Energy
+---
 
-An electron is in a 1D infinite potential well of width $L = 0.5$ nm. It is in the $n=2$ state. What is the energy of the electron in eV?
+# 2. Energy Scaling
 
-## 10. Wavefunction Probability
+### a) Infinite Potential Well
 
-For a particle in a 1D box of length L, the wavefunction for the ground state is $\Psi(x) = \sqrt{2/L} \sin(\pi x/L)$. Calculate the probability of finding the particle in the region $0 \le x \le L/4$. Then calculate the probability of finding the particle in the region $L/4 \le x \le L/2$. Which region is more likely to contain the particle?
+Energy levels:
+
+$$
+E_n = \frac{n^2 h^2}{8mL^2}
+$$
+
+Thus:
+
+$$
+E_n \propto n^2
+$$
+
+---
+
+### b) Hydrogen Atom
+
+Energy levels:
+
+$$
+E_n = -\frac{13.6}{n^2} \text{ eV}
+$$
+
+Thus:
+
+$$
+E_n \propto \frac{1}{n^2}
+$$
+
+---
+
+# 3. Photon Energy
+
+Formula:
+
+$$
+E = \frac{hc}{\lambda}
+$$
+
+Constants:
+
+$$
+h = 4.1357\times10^{-15}\ \text{eV·s}
+$$
+
+$$
+c = 3\times10^8\ \text{m/s}
+$$
+
+Wavelength:
+
+$$
+\lambda = 500\ \text{nm} = 5\times10^{-7}\ \text{m}
+$$
+
+Energy:
+
+$$
+E \approx 2.48\ \text{eV}
+$$
+
+---
+
+# 4. Radioactive Half-Life
+
+Half-life:
+
+$$
+t_{1/2} = 5.27\ \text{years}
+$$
+
+Elapsed time:
+
+$$
+t = 21\ \text{years}
+$$
+
+Number of half-lives:
+
+$$
+n = \frac{21}{5.27} \approx 4
+$$
+
+Remaining mass:
+
+$$
+m = m_0\left(\frac12\right)^n
+$$
+
+$$
+m = 100\left(\frac12\right)^4
+$$
+
+$$
+m \approx 6.25\ \text{g}
+$$
+
+---
+
+# 5. Alpha Decay
+
+Alpha decay of uranium:
+
+$$
+{}^{238}_{92}U
+\rightarrow
+{}^{234}_{90}Th
++
+{}^{4}_{2}He
+$$
+
+---
+
+# 6. Beta Decay
+
+Beta-minus decay of carbon:
+
+$$
+{}^{14}_{6}C
+\rightarrow
+{}^{14}_{7}N
++
+e^-
++
+\bar{\nu}_e
+$$
+
+---
+
+# 7. Pair Annihilation
+
+Rest energy of electron:
+
+$$
+E = 0.511\ \text{MeV}
+$$
+
+Total energy:
+
+$$
+E_{total} = 2\times0.511
+$$
+
+$$
+E_{total} = 1.022\ \text{MeV}
+$$
+
+Two photons share the energy:
+
+$$
+E_\gamma = 0.511\ \text{MeV}
+$$
+
+Wavelength:
+
+Using
+
+$$
+\lambda = \frac{hc}{E}
+$$
+
+Result:
+
+$$
+\lambda \approx 2.43\times10^{-12}\ \text{m}
+$$
+
+---
+
+# 8. Quark Model
+
+Proton composition:
+
+$$
+uud
+$$
+
+Charge:
+
+$$
+\frac{2}{3} + \frac{2}{3} - \frac{1}{3} = +1e
+$$
+
+Neutron composition:
+
+$$
+udd
+$$
+
+Charge:
+
+$$
+\frac{2}{3} - \frac{1}{3} - \frac{1}{3} = 0
+$$
+
+---
+
+# 9. Quantum Well Energy
+
+Energy levels:
+
+$$
+E_n = \frac{n^2h^2}{8mL^2}
+$$
+
+Given:
+
+$$
+L = 0.5\ \text{nm}
+$$
+
+$$
+n = 2
+$$
+
+Electron mass:
+
+$$
+m = 9.11\times10^{-31}\ \text{kg}
+$$
+
+Result:
+
+$$
+E_2 \approx 6.0\ \text{eV}
+$$
+
+---
+
+# 10. Wavefunction Probability
+
+Wavefunction:
+
+$$
+\Psi(x) = \sqrt{\frac{2}{L}}\sin\left(\frac{\pi x}{L}\right)
+$$
+
+Probability density:
+
+$$
+P(x) = |\Psi(x)|^2
+$$
+
+### Region 1
+
+$$
+0 \le x \le L/4
+$$
+
+Probability:
+
+$$
+P \approx 0.09
+$$
+
+---
+
+### Region 2
+
+$$
+L/4 \le x \le L/2
+$$
+
+Probability:
+
+$$
+P \approx 0.41
+$$
+
+Thus:
+
+$$
+L/4 \le x \le L/2
+$$
+
+is **more likely to contain the particle**.
